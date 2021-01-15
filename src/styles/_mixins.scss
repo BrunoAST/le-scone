@@ -1,0 +1,30 @@
+// Tipografia.
+@function em($pixel, $context: 16) {
+    @return $pixel / $context + em;
+}
+
+@mixin tipo-pt-mono($size) {
+    font-family: $font-pt-mono;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+}
+
+@mixin tipo-aref($size) {
+    font-family: $font-aref;
+    @if $size == 18 {
+        font-size: em(18);
+        line-height: em(30, 18);
+    }
+    @else if $size == 24 {
+        font-size: em(24);
+        line-height: em(30, 24);
+    }
+}
+
+@mixin box-shadow($shadow...) {
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
+    box-shadow: $shadow;
+}

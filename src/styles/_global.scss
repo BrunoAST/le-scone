@@ -1,0 +1,40 @@
+* {
+    font-family: 'PT Mono', monospace;
+}
+
+body {
+    background: $bege-claro;
+    border: 10px solid $bege-medio;
+    @include device-size(s) {
+        border: none;
+    }
+}
+
+p {
+    @include tipo-pt-mono(18);
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.titulo {
+    @include tipo-pt-mono(18);
+    text-transform: uppercase;
+    @include device-size(s) {
+        margin-bottom: 40px;
+    }
+    &::after {
+        content: '';
+        display: block;
+        width: 75%;
+        float: right;
+        height: 2px;
+        margin-top: 14px;
+        background: $cinza;
+        @include device-size(m) {
+            width: 60%;
+        }
+    }
+}

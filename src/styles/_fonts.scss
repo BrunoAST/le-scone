@@ -1,0 +1,26 @@
+@font-face {
+    font-family: 'PT Mono';
+    src: url('src/assets/fonts/regular/PTMono-Regular.woff2') format('woff2'),
+        url('src/assets/fonts/regular/PTMono-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aref Ruqaa';
+    src: url('src/assets/fonts/regular/ArefRuqaa-Regular.woff2') format('woff2'),
+        url('src/assets/fonts/regular/ArefRuqaa-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Aref Ruqaa';
+    src: url('src/assets/fonts/bold/ArefRuqaa-Bold.woff2') format('woff2'),
+        url('src/assets/fonts/bold/ArefRuqaa-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+$font-pt-mono: 'PT Mono', monospace;
+$font-aref: 'Aref Ruqaa', serif;

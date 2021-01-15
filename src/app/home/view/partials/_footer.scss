@@ -1,0 +1,29 @@
+footer {
+    padding: 20px 0;
+    background: $cinza;
+    @include box-shadow(0 0 0 10px $cinza);
+    p {
+        color: $bege-claro;
+        @include device-size(s) {
+            text-align: center;
+        }
+    }
+    a img {
+        float: right;
+        @include device-size(s) {
+            float: none;
+            margin: 20px auto;
+        }
+    }
+}
+
+.alinhamento {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    @include device-size(s) {
+        display: block;
+        justify-content: unset;
+        flex: unset;
+    }
+}
